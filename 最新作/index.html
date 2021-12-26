@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>手続きオンライン</title>
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="navigation">
+      <ul>
+        <li class="list active">
+          <a href="#">
+            <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+            <span class="title">ホーム</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="#">
+            <span class="icon"
+              ><ion-icon name="person-circle-outline"></ion-icon
+            ></span>
+            <span class="title">プロフィール</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="#">
+            <span class="icon"><ion-icon name="tv-outline"></ion-icon></span>
+            <span class="title">チャンネル</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="#">
+            <span class="icon"
+              ><ion-icon name="settings-outline"></ion-icon
+            ></span>
+            <span class="title">設定</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="#">
+            <span class="icon"
+              ><ion-icon name="id-card-outline"></ion-icon
+            ></span>
+            <span class="title">個人情報</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="#">
+            <span class="icon"
+              ><ion-icon name="help-circle-outline"></ion-icon
+            ></span>
+            <span class="title">ヘルプ</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="#">
+            <span class="icon"
+              ><ion-icon name="log-out-outline"></ion-icon
+            ></span>
+            <span class="title">サインアウト</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+      const list = document.querySelectorAll(".list");
+      console.log(list);
+      function activeLink() {
+        list.forEach((item) =>
+          // console.log(item);
+          item.classList.remove("active")
+        );
+        this.classList.add("active");
+      }
+
+      list.forEach((item) => {
+        item.addEventListener("click", activeLink);
+      });
+    </script>
+
+    <div class="container">
+      <h2>手続きオンライン</h2>
+    </div>
+
+    <script src="anime.min.js"></script>
+    <script>
+      const container = document.querySelector(".container");
+      for(var i = 0; i <= 50; i++){
+        const blocks = document.createElement("div");
+        blocks.classList.add("block");
+        container.appendChild(blocks);
+      }
+      function animateBlocks(){
+        anime({
+          targets: ".block",
+          translateX: function(){
+            return anime.random(-800, 700);
+          },
+          translateY: function(){
+            return anime.random(-500, 500);
+          },
+          scale: function(){
+            return anime.random(1, 3);
+          },
+          duration: 2500,
+          delay: anime.stagger(15),
+          complete: animateBlocks,
+        });
+      }
+
+      animateBlocks();
+    </script>
+  </body>
+</html>

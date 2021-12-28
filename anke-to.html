@@ -1,0 +1,88 @@
+<link href="payment-form.css" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <form>
+    <h1>住民異動届</h1>
+    <p>テストです。ほぼコピペ。</p>
+
+    <section>
+        <h2>あ</h2>
+
+        <p>
+          <label for="name">
+            <span>届出人: </span>
+          </label>
+          <input type="text" id="name" name="reporter">
+        </p>       
+        
+        <p>
+          <label for="todokedenin">
+            <span>届出人の種類（？）:</span>
+          </label>
+          <select id="card" name="todokedeshurui">
+            <option value="person">本人</option>
+            <option value="Hoh">世帯主</option>
+            <option value="Agent">代理人</option>
+          </select>
+        </p>
+        
+        <p>
+          <label for="mail">
+            <span>届出人のメールアドレス: </span>
+          </label>
+          <input type="email" id="mail" name="usermail">
+        </p>
+        <p>
+          <label for="date">
+            <span>届出日:</span>
+          </label>
+          <input type="date" id="date" name="Ndate">
+        </p>
+        
+        <p>
+          <label for="name">
+            <span>届出人の連絡先: </span>
+          </label>
+          <input type="tel" id="tel" name="ContactA">
+        </p>       
+        
+        <p>
+          <label for="todokedenin">
+            <span>届出人の連絡先の種類（？）: </span>
+          </label>
+          <select id="card" name="contactA">
+            <option value="home">自宅</option>
+            <option value="Wtw">就職先</option>
+            <option value="mobileP">携帯等</option>
+          </select>
+        </p>
+
+    </section>
+
+    <section>
+        <h2>Payment information</h2>
+        <p>
+          <label for="card">
+            <span>Card type:</span>
+          </label>
+          <select id="card" name="usercard">
+            <option value="visa">Visa</option>
+            <option value="mc">Mastercard</option>
+            <option value="amex">American Express</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="date">
+            <span>Expiration date:</span>
+            <strong><abbr title="required">*</abbr></strong>
+            <em>formatted as mm/dd/yyyy</em>
+          </label>
+          <input type="date" id="date" name="expiration">
+        </p>
+
+
+    </section>
+</form>
+</html>

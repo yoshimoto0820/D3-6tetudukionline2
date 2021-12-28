@@ -1,0 +1,72 @@
+<link href="payment-form.css" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="en-US">
+<script type="text/javascript" src="tetu.js"></script>
+  <form>
+    <h1>住民異動届</h1>
+    <p>テストです。ほぼコピペ。<br>
+      届出人の情報。
+    </p>
+
+    <section>
+        <h2>あ</h2>
+
+        <p>
+          <label for="name">
+            <span>届出人(代理人): </span>
+          </label>
+          <input type="text" id="name" name="reporter">
+        </p>       
+        
+        <p>
+          <label for="name2">
+            <span>届出人の種類（？）:</span>
+          </label>
+          <select id="name2" name="name2">
+            <option value="person">本人</option>
+            <option value="Hoh">世帯主</option>
+            <option value="Agent">代理人</option>
+          </select>
+        </p>
+        
+        <p>
+          <label for="mail">
+            <span>届出人のメールアドレス: </span>
+          </label>
+          <input type="email" id="mail" name="usermail">
+        </p>
+        <p>
+          <label for="date">
+            <span>届出日:</span>
+          </label>
+          <input type="date" id="date" name="Ndate">
+        </p>
+        
+        <p>
+          <label for="contact">
+            <span>届出人の連絡先(電話番号): </span>
+          </label>
+          <input type="tel" id="tel" name="ContactA">
+        </p>       
+        
+        <p>
+          <label for="contact">
+            <span>届出人の連絡先の種類（？）: </span>
+          </label>
+          <select id="card" name="contactA">
+            <option value="home">自宅</option>
+            <option value="Wtw">就職先</option>
+            <option value="mobileP">携帯等</option>
+          </select>
+        </p>
+
+    </section>
+
+</form>
+<body>
+  <p>
+    <a href="page2.html">次のページ（旧住所と新住所の入力）へ</a>
+  </p>
+
+</body>
+</html>

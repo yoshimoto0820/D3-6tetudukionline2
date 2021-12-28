@@ -1,0 +1,48 @@
+<link href="payment-form.css" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="en-US">
+<script type="text/javascript" src="tetu.js"></script>
+<script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
+  <form>
+    <h1>住民異動届</h1>
+    <p>旧住所と新住所</p>
+
+    <section>
+        <h2>旧住所</h2>
+
+        <p>
+          <label for="name">
+            <span>世帯主名: </span>
+          </label>
+          <input type="text" id="name" name="reporter">
+        </p>       
+        
+        <p>
+          郵便番号(7桁、ハイフン不要)<br>
+          <input type="text" name="zip11" size="10" maxlength="8" onKeyUp="AjaxZip3.zip2addr(this,'','addr11','addr11');"><br>
+          住所<br>
+          <input type="text" name="addr11" size="60">
+        </p>
+    </section>
+
+    <br>
+    <br>
+
+    <section>
+      <h2>新住所</h2>    
+      <p>
+        郵便番号(7桁、ハイフン不要)<br>
+        <input type="text" name="zip11" size="10" maxlength="8" onKeyUp="AjaxZip3.zip2addr(this,'','addr11','addr11');"><br>
+        住所<br>
+        <input type="text" name="addr11" size="60">
+      </p>
+  </section>
+</form>
+<body>
+  
+  <p>
+    <a href="page2.html">次のページへ</a>
+  </p>
+
+</body>
+</html>
